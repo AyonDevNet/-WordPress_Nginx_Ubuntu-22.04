@@ -11,14 +11,13 @@ curl -O https://wordpress.org/latest.tar.gz
 tar -xvzf latest.tar.gz
 sudo mv wordpress /var/www/
 
-#Set Permissions
-sudo chown -R www-data:www-data /var/www/wordpress
-sudo chmod -R 755 /var/www/wordpress
 
+#Set Permissions
+sudo chown -R www-data:www-data /var/www/mycoolblog
+sudo chmod -R 755 /var/www/mycoolblog
 
 #Create a new site config:
-
-sudo nano /etc/nginx/sites-available/wordpress
+sudo nano /etc/nginx/sites-available/mycoolblog
 
 #Then enable the config:
 
@@ -26,3 +25,7 @@ sudo ln -s /etc/nginx/sites-available/wordpress /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 
+#install SSL 
+
+sudo apt install certbot python3-certbot-nginx -y
+sudo certbot --nginx -d mycoolblog.com -d www.mycoolblog.com
