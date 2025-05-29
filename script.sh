@@ -6,10 +6,11 @@ sudo apt install nginx mysql-server php-fpm php-mysql unzip curl -y
 sudo mysql -u root -p
 
 #Download WordPress
-cd /tmp
+cd /etc
 curl -O https://wordpress.org/latest.tar.gz
 tar -xvzf latest.tar.gz
-sudo mv wordpress /var/www/
+sudo mv wordpress /var/www/mycoolblog
+
 
 
 #Set Permissions
