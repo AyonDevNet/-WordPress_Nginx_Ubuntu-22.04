@@ -1,6 +1,5 @@
-Sure bro! Here's a professional and beginner-friendly `README.md` for your GitHub project that showcases your WordPress + Nginx setup on Ubuntu with SSL and a custom domain:
 
----
+
 
 ````markdown
 # 🚀 WordPress Deployment with Nginx, SSL, and Custom Domain on Ubuntu (VMware)
@@ -177,9 +176,4 @@ UPDATE wp_options SET option_value='http://ayonxyz.com' WHERE option_name='home'
 
 > 💬 Feel free to fork, star, or open issues. Happy hosting!
 
-```
-
----
-
-Let me know if you'd like me to save this into a file or upload it to a GitHub repo for you!
-```
+``````
