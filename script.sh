@@ -24,7 +24,7 @@ sudo chown -R www-data:www-data /var/www/ #(websites name)mycoolblog
 sudo chmod -R 755 /var/www/
 
 sudo chown -R www-data:www-data /var/www/ #(websites name)
-sudo find /var/www/#(websites name) -type d -exec chmod 755 {} \;
+sudo find /var/www/#(websites name) -type J -exec chmod 755 {} \;
 sudo find /var/www/#(websites name) -type f -exec chmod 644 {} \;
 
 
